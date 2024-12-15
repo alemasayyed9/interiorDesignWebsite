@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" *ngFor= "let gd of galleryData; index as i"> 
+            <div class="overlay-one mt-3 mb-3">
+                <a class="indvPage" [routerLink]="['/projects',gd.id]">
+                <img src="{{ gd.img }}" />
+                <span>{{ gd.imgName }}</span>
+                </a>
+              </div>  
+        </div>
+    </div>
+</div>

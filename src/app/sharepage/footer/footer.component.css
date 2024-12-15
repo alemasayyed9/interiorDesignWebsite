@@ -1,0 +1,79 @@
+.footer{
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    /* background-color: grey; */
+    background-image: linear-gradient( grey , white);
+    /* background-color: #182628; */
+    padding: 20px 10px;
+}
+
+P{
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+h1{
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+a:hover{
+color: var(--primary-color);
+}
+
+.card{
+   margin: 50px;
+}
+
+.card h1{
+    font-weight: normal;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+input, textarea{
+    border: none;
+    border-bottom: 2px solid;
+}
+
+.btn{
+   margin: 35%;
+}
+
+.address h1,p{
+ font-weight: normal;
+ letter-spacing: 2px;
+}
+
+.bi-envelope-at{
+    font-size: 25px;
+}
+
+.bi-telephone{
+    font-size: 25px;
+}
+
+
+
+/* CSS FOR MOBILE PHONES */
+
+@media screen and (max-width: 1200px) {
+
+    .contact-card{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

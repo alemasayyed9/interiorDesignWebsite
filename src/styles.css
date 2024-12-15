@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-color:#fff;
+    --secondary-color:black;
+}
+body
+{
+    height: 100vh;
+    font-family: 'Roboto Slab';
+    background-color: #fff7ed;
+    color: #4c4841;
+    /* background: linear-gradient(#fff, #a1a1a1); */
+    /* background-image:url('./assets/img/greysofaimg.jpg'); */
+}

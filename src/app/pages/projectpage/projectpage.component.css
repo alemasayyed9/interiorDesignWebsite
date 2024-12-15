@@ -1,0 +1,26 @@
+.container h1{
+    /* font-size: 35px; */
+    text-align: center;
+    margin-top: 70px;
+}
+
+.projList{
+    padding: 20px 40px;
+    border-left: 5px double #4c4841;
+
+}
+
+.projList img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.fancybox{
+    transition: .5s ease-in-out;
+}
+
+.fancybox:hover{
+    filter: brightness(60%);
+}

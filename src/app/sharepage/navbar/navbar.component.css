@@ -1,0 +1,42 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand.active-link{
+    color: #fff7ed;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link{
+    color: #fff7ed;
+    border-radius: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active-link{
+    text-decoration: none;
+    background-color: #fff7ed;
+    color: #4c4841
+}
+
+/* CSS FOR MOBILE PHONES  NAV */
+@media screen and (max-width: 1200px) {
+    .navbar-brand.active-link{
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-link{
+        color: #fff;
+    }
+}
+

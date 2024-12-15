@@ -1,0 +1,79 @@
+<div class="banner">
+  <div class="overlay">
+    <app-navbar></app-navbar>
+
+    <div class="content">
+      <h1>All Your Interior Solution</h1>
+      <h3>"Everything is designed. Few things are designed well."</h3>
+    </div>
+    <a class="projects-link" routerLink="projects" routerLinkActive="active-link">Explore Our Projects</a>
+    <a class="contact-link" routerLink="contact" routerLinkActive="active-link">Get In Touch</a>
+  </div>
+</div>
+
+<div class="container mobile-only">
+  <div class="custom-flex-class">
+  <img src="assets/img/logo.png" alt="logo"/>
+  <div class="animated-text">
+<!--    <h1 class="text-center"><span class="auto-type">Project Art Gallery</span></h1>-->
+    <h1><br>Project Art Gallery</h1>
+    <h2><br>Step into a world where creativity sparks emotion, and every piece tells its own story<br><br>
+    </h2>
+
+  </div>
+  </div>
+  <!-- Swiper Widget  -->
+
+  <section>
+    <swiper-container
+      class="mySwiper"
+      loop="true"
+      pagination="false"
+      effect="coverflow"
+      grab-cursor="false"
+      centered-slides="true"
+      slides-per-view="auto"
+      coverflow-effect-rotate="50"
+      coverflow-effect-stretch="0"
+      coverflow-effect-depth="100"
+      coverflow-effect-modifier="1"
+      coverflow-effect-slide-shadows="true"
+      autoplay-delay="2500"
+      autoplay-disable-on-interaction="false"
+      routerLink="/projects"
+    >
+      <swiper-slide *ngFor="let gd of galleryData; index as i">
+        <div class="overlay-one">
+          <img src="{{ gd.img }}" />
+          <!-- <a class="swiperBtn" [routerLink]="['/home',gd.id]"><img src="{{ gd.img }}" /></a> -->
+          <span>{{ gd.imgName }}</span>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
+<!--  <div class="box row mobile-only">-->
+<!--    <h1 class="text-center">What Do WE Offer</h1>-->
+<!--    &lt;!&ndash; One &ndash;&gt;-->
+<!--    <div class="col-lg-4 mt-5">-->
+<!--      <div class="shadowBox">-->
+<!--        <img src="assets/img/creativity.png">-->
+<!--        <p>Creativity</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Two &ndash;&gt;-->
+<!--    <div class="col-lg-4 mt-5">-->
+<!--      <div class="shadowBox">-->
+<!--        <img src="assets/img/challenge.png">-->
+<!--        <p>Handle Challenging Projects</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Three &ndash;&gt;-->
+<!--    <div class="col-lg-4 mt-5">-->
+<!--      <div class="shadowBox">-->
+<!--        <img src="assets/img/services.png">-->
+<!--        <p>End to end Services</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</div>
